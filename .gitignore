@@ -11,3 +11,4 @@
 _ReSharper.*
 *.resharper
 Ankh.NoLoad
+Library/.vs/Library/v15/Server/sqlite3/db.lock
