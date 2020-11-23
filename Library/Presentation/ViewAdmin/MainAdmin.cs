@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Common.cache;
+using Presentation.ViewAdmin;
 
 namespace Presentation
 {
@@ -37,11 +38,11 @@ namespace Presentation
 
         private void Project_Click(object sender, EventArgs e)
         {
-          //  ProjectForm project = new ProjectForm();
-          //  project.Show();
+             ViewBooks book = new ViewBooks();
+             book.Show();
 
         }
-    
+
         private void btn_ViewProjects_Click(object sender, EventArgs e)
         {
 

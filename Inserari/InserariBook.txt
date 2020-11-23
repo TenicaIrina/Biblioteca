@@ -1,0 +1,37 @@
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-136-24','29-07-1981','Maitreyi','Vera')
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-246-21','09-10-2003','Enigma Otiliei','Vera')
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-146-25','18-05-1975','18-05-1975','Apollo')
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-548-15','25-07-1982','Morometii','Apollo')
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-938-23','13-08-1994','Fangirl','Diana')
+
+ insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-894-28','17-05-1989','Doamna Bovary','Diana')
+
+  insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-392-56','28-06-1984','Daca as ramane','Diana')
+
+  insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-392-46','28-06-2000','Cioburi de stele','Elis')
+
+   insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('11223455564','2-06-1984','Harap-Alb','Elis')
+
+   insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-392-16','3-06-1984','Lapusneanul','Eduard')
+
+  insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-392-26','5-06-1984','Moara cu noroc','Eduard')
+
+  insert into Book(ISBN, DatePublishing, Title, BookPublishing)
+ values('2589-092-56','12-06-1984','O scrisoare pierduta','Eduard')
+

@@ -9,17 +9,15 @@ using Common.cache;
 
 namespace DataAccesLayer
 {
-    public class UserData:ConnectionSql
+    public class UserData
     {
+        private ConnectionSql connection = new ConnectionSql();
         public bool Login(string user, string pass)
         {
-            using (var connection = GetConnection())//pt a obtine conexiunea din clasa de  baza
-            {
-                connection.Open();
-
+         
                 using (var command = new SqlCommand())
                 {
-                    command.Connection = connection;
+                    command.Connection = connection.OpenConnection();
 
                     command.CommandText = "select * from Users  where UserName=@user and Password=@pass";
                     command.Parameters.AddWithValue("@user", user);
@@ -45,7 +43,6 @@ namespace DataAccesLayer
                         return false;
 
                 }
-            }
         }
 
         public void RoleUser()

@@ -52,16 +52,22 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainAdmin.cs">
+    <Compile Include="ViewAdmin\MainAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainAdmin.designer.cs">
+    <Compile Include="ViewAdmin\MainAdmin.designer.cs">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainUser.cs">
+    <Compile Include="ViewAdmin\ViewBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainUser.designer.cs">
+    <Compile Include="ViewAdmin\ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUser\MainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUser\MainUser.designer.cs">
       <DependentUpon>MainUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -69,10 +75,13 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainAdmin.resx">
+    <EmbeddedResource Include="ViewAdmin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainUser.resx">
+    <EmbeddedResource Include="ViewAdmin\ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUser\MainUser.resx">
       <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

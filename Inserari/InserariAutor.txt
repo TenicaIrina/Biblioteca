@@ -1,0 +1,44 @@
+insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Ion','Creanga','11223455564')
+
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Luca','Caragiale','2589-092-56')
+
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Mircea','Eliade','2589-136-24')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('George','Calinescu','2589-246-21')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Markus','Zusak','2589-259-77')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Mihail','Sadoveanu','2589-392-16')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Ioan','Slavici','2589-392-26')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Mihail','Sadoveanu','2589-392-36')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Amie','Kaufman','2589-392-46')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Gayle','Forman','2589-392-56')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('John','Green','2589-547-78')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Marin','Preda','2589-548-15')
+   
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Gustave','Flaubert','2589-894-28')
+   
+ insert into Author (FirstName, LastName,ISBNFK) values 
+   ('Rainbow','Rowel','2589-938-23')

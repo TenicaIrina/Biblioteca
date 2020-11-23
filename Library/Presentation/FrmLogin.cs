@@ -67,7 +67,7 @@ namespace Presentation
             if (txtUser.Text == "Username")
             {
                 txtUser.Text = "";
-                txtUser.ForeColor = Color.LightGray;
+                txtUser.ForeColor = Color.DarkGray;
             }
         }
 
@@ -85,7 +85,7 @@ namespace Presentation
             if (txtpass.Text == "Password")
             {
                 txtpass.Text = "";
-                txtpass.ForeColor = Color.LightGray;
+                txtpass.ForeColor = Color.DarkGray;
                 txtpass.UseSystemPasswordChar = true;
             }
         }

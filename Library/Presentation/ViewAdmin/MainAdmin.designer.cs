@@ -235,7 +235,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(244, 94);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Create projects";
+            this.button2.Text = "Insert Books";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Project_Click);
@@ -325,7 +325,7 @@
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn_LogoutClick);
             // 
-            // Main
+            // MainAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -339,7 +339,7 @@
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main";
+            this.Name = "MainAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);

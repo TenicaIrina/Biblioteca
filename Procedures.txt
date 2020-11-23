@@ -1,0 +1,75 @@
+create procedure DeleteBook
+@title nvarchar(50)
+as
+delete from Book where Title=@title
+go
+
+exec DeleteBook 'Morometii'
+
+select * from Book
+
+
+
+
+create procedure EditDataBooks
+
+
+@datePublishing varchar(20),
+@title varchar(50),
+@bookPublishing varchar(20),
+@isbn varchar(20)
+
+as
+
+update Book set  DatePublishing=@datePublishing,Title= @title,BookPublishing=@bookPublishing where ISBN=@isbn 
+
+go
+
+exec EditDataBooks  '25-08-1982','Morometii','Humanitas', '2589-548-15'
+
+
+select *from Book
+
+
+
+create procedure EditData
+
+
+@datePublishing varchar(20),
+@title varchar(50),
+@bookPublishing varchar(20),
+@isbn varchar(20),
+
+as
+
+update Book set   DatePublishing=@datePublishing,Title= @title,BookPublishing=@bookPublishing where ISBN=@isbn 
+
+go
+
+exec EditData 'Morometii', '25-08-1982','Humanitas', '2589-548-15'
+
+select *from Book
+
+
+UPDATE Book
+SET Title = 'Orase de hartie', DatePublishing = '21-02-1997', BookPublishing='Via'
+WHERE ISBN ='2589-547-78';
+
+
+
+
+create procedure InsertBooks
+
+@isbn varchar(20),
+@datePublishing varchar(20),
+@title varchar(50),
+@bookPublishing varchar(20)
+
+as
+
+insert into Book values(@isbn, @datePublishing,@title, @bookPublishing)
+
+go
+
+exec InsertBooks '2589-547-78', '21-02-1997','Orase de hartie' , 'Humanitas'
+
