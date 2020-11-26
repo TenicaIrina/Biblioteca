@@ -1,0 +1,25 @@
+INSERT INTO Category_table(NameCategory) VALUES ('Fantasy');//1
+INSERT INTO Category_table(NameCategory) VALUES ('Drama');   2
+INSERT INTO Category_table(NameCategory) VALUES ('Mystery'); 3
+INSERT INTO Category_table(NameCategory) VALUES ('Crime');   4
+INSERT INTO Category_table(NameCategory) VALUES ('Sci-Fi');   5
+INSERT INTO Category_table(NameCategory) VALUES ('Romance');   6
+INSERT INTO Category_table(NameCategory) VALUES ('Poetry');    7
+INSERT INTO Category_table(NameCategory) VALUES ('History');   8
+INSERT INTO Category_table(NameCategory) VALUES ('Science');   9
+
+
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('11223455564',1);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-092-56',2);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-136-24',6);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-246-21',2);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-259-77',2);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-392-16',8);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-392-26',2);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-392-36',4);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-392-46',3);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-392-56',6);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-547-78',6);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-548-15',8);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-894-28',2);
+INSERT INTO CategoryBook(ISBNFK,CategoryIdFK) VALUES ('2589-938-23',5);

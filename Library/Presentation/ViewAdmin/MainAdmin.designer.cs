@@ -201,10 +201,10 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(244, 94);
             this.button3.TabIndex = 3;
-            this.button3.Text = "View projects";
+            this.button3.Text = "View books";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btn_ViewProjects_Click);
+            this.button3.Click += new System.EventHandler(this.btn_ViewBooks_Click);
             // 
             // button5
             // 

@@ -28,6 +28,8 @@ namespace DataAccesLayer
                 return table; 
         }
 
+        
+
         public void InsertBook(string isbn, string datePublishing, string title, string bookPublishing)
         {
              
@@ -40,7 +42,7 @@ namespace DataAccesLayer
                 command.Parameters.AddWithValue("@bookPublishing", bookPublishing);
                 command.ExecuteNonQuery();
                 command.Parameters.Clear();//pt a nu folosi de fiecare data un obiect de tipul SqlCommandpt a nu duplica codul
-            connection.CloseConnection();
+                connection.CloseConnection();
 
         }
 

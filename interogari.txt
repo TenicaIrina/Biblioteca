@@ -1,0 +1,27 @@
+--scrise de un autor dat
+SELECT TITLE FROM ((Book B INNER JOIN AuthorBook AB
+ ON B.ISBN = AB.ISBN )
+ INNER JOIN AUTHOR A
+ ON A.ISBNFK = AB.ISBN)
+ WHERE A.FirstName = 'Mircea' AND A.LastName = 'Eliade'
+
+ --caracterizate prin n cuvinte cheie
+ select * from Book where Title like '%Har%'
+
+ --aparute intre 2 ani dati
+ select B.Title
+ from  Book B
+ where B.DatePublishing between '2-06-1984' AND '21-02-1997';
+
+ --aparute la o anumita editura.
+ select B.Title
+ from  Book B
+ where B.BookPublishing ='Via';
+
+ --apartin unui anumit domeniu; 
+SELECT A.FIRSTNAME, A.LASTNAME
+ FROM (((Author A INNER JOIN AUTHORBOOK AB
+ ON AB.AuthorIdFK = A.AuthorId) INNER JOIN CATEGORYBOOK BC
+ ON BC.ISBNFK = AB.ISBN) INNER JOIN CATEGORYTABLE C
+ ON C.CATEGORYID = BC.CATEGORYIDFK)
+ WHERE C.NAMECATEGORY = 'Drama'

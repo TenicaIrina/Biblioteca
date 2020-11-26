@@ -58,6 +58,12 @@
     <Compile Include="ViewAdmin\MainAdmin.designer.cs">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAdmin\BooksDataDisplayUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdmin\BooksDataDisplayUser.designer.cs">
+      <DependentUpon>BooksDataDisplayUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAdmin\ViewBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAdmin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdmin\BooksDataDisplayUser.resx">
+      <DependentUpon>BooksDataDisplayUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAdmin\ViewBooks.resx">
       <DependentUpon>ViewBooks.cs</DependentUpon>

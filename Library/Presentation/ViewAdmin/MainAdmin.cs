@@ -169,5 +169,11 @@ namespace Presentation
             FrmLogin fm = new FrmLogin();
             fm.Show();
         }
+
+        private void btn_ViewBooks_Click(object sender, EventArgs e)
+        {
+            BooksDataDisplayUser book = new BooksDataDisplayUser();
+            book.Show();
+        }
     }
 }
