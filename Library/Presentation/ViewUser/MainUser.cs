@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Common.cache;
+using Presentation.ViewAdmin;
 
 namespace Presentation
 {
@@ -53,7 +54,7 @@ namespace Presentation
 
         private void ViewReports_Click(object sender, EventArgs e)
         {
-           // OpenFormInPanelUser(new ReportForm());
+            OpenFormInPanelUser(new Category());
         }
 
     
@@ -166,6 +167,16 @@ namespace Presentation
             this.Hide();
             FrmLogin fm = new FrmLogin();
             fm.Show();
+        }
+
+        private void ManageBooksUser_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanelUser(new BooksByDates());
+        }
+
+        private void ReportsManage_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanelUser(new ReportsByPublishingHouse());
         }
     }
 }

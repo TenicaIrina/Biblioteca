@@ -12,7 +12,7 @@ namespace DataAccesLayer
     {
         private ConnectionSql connection = new ConnectionSql();
         SqlDataReader reader;
-        DataTable table = new DataTable();//pt a stoca liniile
+        DataTable table = new DataTable();
         SqlCommand command = new SqlCommand();
 
 

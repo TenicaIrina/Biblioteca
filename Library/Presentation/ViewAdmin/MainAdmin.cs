@@ -24,10 +24,7 @@ namespace Presentation
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-        //private void panel1_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
+     
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
@@ -38,23 +35,13 @@ namespace Presentation
 
         private void Project_Click(object sender, EventArgs e)
         {
-             ViewBooks book = new ViewBooks();
-             book.Show();
+            OpenFormInPanel(new ViewBooks());
+             //ViewBooks book = new ViewBooks();
+             //book.Show();
 
         }
 
-        private void btn_ViewProjects_Click(object sender, EventArgs e)
-        {
-
-          //  Projects_data_display projects = new Projects_data_display();
-         //   projects.Show();
-        }
-
-        private void TeamManagement_Click(object sender, EventArgs e)
-        {
-         
-          //  OpenFormInPanel(new TeamManagement());
-        }
+       
 
 
         private void btnSlide_Click(object sender, EventArgs e)
@@ -135,20 +122,12 @@ namespace Presentation
 
         private void btnReports(object sender, EventArgs e)
         {
-          //  OpenFormInPanel(new ReportsProject());
+             OpenFormInPanel(new Category());
+            //Category cat = new Category();
+            //cat.Show();
         }
 
-        //private void btnDiagrams_Click(object sender, EventArgs e)
-        //{
-        //    FormTest test = new FormTest();
-        //    test.Show();
-        //}
-
-        private void TimeTrackingReports_Click(object sender, EventArgs e)
-        {
-         //   FormTest test = new FormTest();
-         //   test.Show();
-        }
+     
 
         private void panelContent_Paint(object sender, PaintEventArgs e)
         {
@@ -172,8 +151,24 @@ namespace Presentation
 
         private void btn_ViewBooks_Click(object sender, EventArgs e)
         {
-            BooksDataDisplayUser book = new BooksDataDisplayUser();
-            book.Show();
+            OpenFormInPanel(new BooksDataDisplayUser());
+            //BooksDataDisplayUser book = new BooksDataDisplayUser();
+            //book.Show();
+        }
+
+        private void BooksByDates_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new BooksByDates());
+            //BooksByDates data = new BooksByDates();
+            //data.Show();
+        }
+
+
+        private void ViewPublishingHouse(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new ReportsByPublishingHouse());
+            //ReportsByPublishingHouse pu = new ReportsByPublishingHouse();
+            //pu.Show();
         }
     }
 }

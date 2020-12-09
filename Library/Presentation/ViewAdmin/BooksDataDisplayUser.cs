@@ -14,8 +14,14 @@ namespace Presentation.ViewAdmin
 {
     public partial class BooksDataDisplayUser : Form
     {
-        CaracteristicsModel objectBook = new CaracteristicsModel();
-        // MainForm mainContent = new MainForm();
+        Helper con = new Helper();
+        SqlDataAdapter dtadapter;
+        System.Data.DataTable dt;
+        SqlCommand cmd;
+     
+        MainAdmin mainContent = new MainAdmin();
+
+
         public BooksDataDisplayUser()
         {
             InitializeComponent();
@@ -31,10 +37,24 @@ namespace Presentation.ViewAdmin
             dataGridView1User.DataSource = objectB.ShowBooksDataTableUsingAcces(txt_SearchUser.Text);
         }
 
+
+
+        public void searchdata(string search)
+        {
+            string query = " select * from Book where Title like '%" + search + "%'";
+            cmd = new SqlCommand(query, con.OpenConnection());
+            dtadapter = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            dtadapter.Fill(dt);
+            dataGridView1User.DataSource = dt;
+        }
+
+
+
         private void txt_SearchUser_TextChanged(object sender, EventArgs e)
         {
            
-            objectBook.ShowBooksDataTableUsingAcces(txt_SearchUser.Text);
+            searchdata(txt_SearchUser.Text);
            
         }
 

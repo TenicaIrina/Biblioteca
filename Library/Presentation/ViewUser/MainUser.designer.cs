@@ -30,13 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.btnLogoutUser = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUserBook = new System.Windows.Forms.Button();
             this.lblmailUser = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblNameUser = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@
             this.pictureMarire = new System.Windows.Forms.PictureBox();
             this.pictureMinimizare = new System.Windows.Forms.PictureBox();
             this.panelUser = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.PanelTitlu.SuspendLayout();
@@ -64,7 +62,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 3);
+            this.label1.Location = new System.Drawing.Point(52, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 25);
             this.label1.TabIndex = 2;
@@ -75,16 +73,30 @@
             this.MenuVertical.BackColor = System.Drawing.Color.SkyBlue;
             this.MenuVertical.Controls.Add(this.button7);
             this.MenuVertical.Controls.Add(this.btnLogoutUser);
-            this.MenuVertical.Controls.Add(this.button6);
             this.MenuVertical.Controls.Add(this.button5);
-            this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.button4);
             this.MenuVertical.Controls.Add(this.button3);
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.btnUserBook);
             this.MenuVertical.Location = new System.Drawing.Point(0, 86);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 620);
             this.MenuVertical.TabIndex = 3;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(6, 528);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(244, 89);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Logout";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnLogoutUser
             // 
@@ -100,23 +112,6 @@
             this.btnLogoutUser.Text = "Logout";
             this.btnLogoutUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogoutUser.UseVisualStyleBackColor = true;
-
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 450);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(244, 89);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Reports \r\nby dates\r\nand periods";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.TimeTrakingReports);
             // 
             // button5
             // 
@@ -133,22 +128,6 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 361);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(253, 90);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Hours reports";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.ReportsByHours);
-            // 
             // button4
             // 
             this.button4.FlatAppearance.BorderSize = 0;
@@ -160,7 +139,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(256, 82);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Tasks reports";
+            this.button4.Text = "Domain reports";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.ViewReports_Click);
@@ -176,26 +155,26 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(256, 98);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Team\r\n Management";
+            this.button3.Text = "Reports by Publishing";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.TeamManage_Click);
+            this.button3.Click += new System.EventHandler(this.ReportsManage_Click);
             // 
-            // button1
+            // btnUserBook
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 77);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Manage projects";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.ManageProjectsUser_Click);
+            this.btnUserBook.FlatAppearance.BorderSize = 0;
+            this.btnUserBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserBook.ForeColor = System.Drawing.Color.White;
+            this.btnUserBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUserBook.Location = new System.Drawing.Point(0, 96);
+            this.btnUserBook.Name = "btnUserBook";
+            this.btnUserBook.Size = new System.Drawing.Size(250, 77);
+            this.btnUserBook.TabIndex = 1;
+            this.btnUserBook.Text = "Reports by Dates";
+            this.btnUserBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUserBook.UseVisualStyleBackColor = true;
+            this.btnUserBook.Click += new System.EventHandler(this.ManageBooksUser_Click);
             // 
             // lblmailUser
             // 
@@ -243,7 +222,7 @@
             this.PanelTitlu.Controls.Add(this.label1);
             this.PanelTitlu.Location = new System.Drawing.Point(256, 12);
             this.PanelTitlu.Name = "PanelTitlu";
-            this.PanelTitlu.Size = new System.Drawing.Size(806, 75);
+            this.PanelTitlu.Size = new System.Drawing.Size(1063, 75);
             this.PanelTitlu.TabIndex = 4;
             this.PanelTitlu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BaraTiltlu_MouseDown);
             // 
@@ -263,7 +242,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Presentation.Properties.Resources.iconexit;
-            this.pictureBox1.Location = new System.Drawing.Point(786, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1043, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -275,7 +254,7 @@
             // 
             this.pictureRestabilre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureRestabilre.Image = global::Presentation.Properties.Resources.icon_maximaze;
-            this.pictureRestabilre.Location = new System.Drawing.Point(769, 0);
+            this.pictureRestabilre.Location = new System.Drawing.Point(1017, 0);
             this.pictureRestabilre.Name = "pictureRestabilre";
             this.pictureRestabilre.Size = new System.Drawing.Size(20, 20);
             this.pictureRestabilre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,7 +268,7 @@
             this.pictureMarire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureMarire.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureMarire.Image = global::Presentation.Properties.Resources.icon_maximaze;
-            this.pictureMarire.Location = new System.Drawing.Point(769, 0);
+            this.pictureMarire.Location = new System.Drawing.Point(1017, 0);
             this.pictureMarire.Name = "pictureMarire";
             this.pictureMarire.Size = new System.Drawing.Size(20, 20);
             this.pictureMarire.TabIndex = 6;
@@ -301,7 +280,7 @@
             this.pictureMinimizare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureMinimizare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureMinimizare.Image = global::Presentation.Properties.Resources.icon_minimizare;
-            this.pictureMinimizare.Location = new System.Drawing.Point(743, 0);
+            this.pictureMinimizare.Location = new System.Drawing.Point(991, 0);
             this.pictureMinimizare.Name = "pictureMinimizare";
             this.pictureMinimizare.Size = new System.Drawing.Size(20, 20);
             this.pictureMinimizare.TabIndex = 3;
@@ -311,32 +290,16 @@
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.Transparent;
-            this.panelUser.Location = new System.Drawing.Point(256, 93);
+            this.panelUser.Location = new System.Drawing.Point(256, 86);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(1326, 613);
+            this.panelUser.Size = new System.Drawing.Size(1063, 620);
             this.panelUser.TabIndex = 5;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(6, 528);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(244, 89);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Logout";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // MainUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1071, 709);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(1322, 695);
             this.Controls.Add(this.lblUserRole);
             this.Controls.Add(this.lblmailUser);
             this.Controls.Add(this.lblNameUser);
@@ -373,11 +336,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUserBook;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panelUser;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblmailUser;

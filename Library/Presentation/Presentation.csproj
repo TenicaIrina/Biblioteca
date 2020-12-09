@@ -64,6 +64,24 @@
     <Compile Include="ViewAdmin\BooksDataDisplayUser.designer.cs">
       <DependentUpon>BooksDataDisplayUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAdmin\BooksByDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdmin\BooksByDates.designer.cs">
+      <DependentUpon>BooksByDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdmin\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdmin\Category.designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdmin\ReportsByPublishingHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdmin\ReportsByPublishingHouse.designer.cs">
+      <DependentUpon>ReportsByPublishingHouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAdmin\ViewBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +104,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAdmin\BooksDataDisplayUser.resx">
       <DependentUpon>BooksDataDisplayUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdmin\BooksByDates.resx">
+      <DependentUpon>BooksByDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdmin\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdmin\ReportsByPublishingHouse.resx">
+      <DependentUpon>ReportsByPublishingHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAdmin\ViewBooks.resx">
       <DependentUpon>ViewBooks.cs</DependentUpon>
@@ -152,6 +179,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\innovation %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\period1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
