@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Domain;
 
@@ -34,23 +27,9 @@ namespace Presentation.ViewAdmin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //inserare
-            if (Edit == false)
-            {
-                try
-                {
-                    objectBook.InsertBooks(txtISBN.Text, txtDate.Text, txtTitle.Text, txtBookPublishing.Text);
-                    MessageBox.Show("The data was inserted correctly");
-                    ShowBooksfromModel();
-                    ClearForm();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Data was not inserted because" + ex);
-                }
-            }
+           
             //editare
-            if (Edit == true)
+            if (Edit)
             {
                 try
                 {
@@ -65,7 +44,22 @@ namespace Presentation.ViewAdmin
                     MessageBox.Show("Data was not edited because" + ex);
                 }
             }
-           
+            //inserare
+            else
+            {
+                try
+                {
+                    objectBook.InsertBooks(txtISBN.Text, txtDate.Text, txtTitle.Text, txtBookPublishing.Text);
+                    MessageBox.Show("The data was inserted correctly");
+                    ShowBooksfromModel();
+                    ClearForm();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data was not inserted because" + ex);
+                }
+            }
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)

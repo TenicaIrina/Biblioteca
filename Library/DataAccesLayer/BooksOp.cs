@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace DataAccesLayer
 {
     public class BooksOp
     {
-        private ConnectionSql connection = new ConnectionSql();
-        SqlDataReader reader;
-        DataTable table = new DataTable();
-        SqlCommand command = new SqlCommand();
+        private readonly ConnectionSql connection = new ConnectionSql();
+        readonly DataTable table = new DataTable();
+        readonly SqlCommand command = new SqlCommand();
 
 
         public DataTable ShowData()
         {
             //SQL
-                
+                SqlDataReader reader;
                 command.Connection = connection.OpenConnection();
                 command.CommandText = "Select *from Book";
                 reader = command.ExecuteReader();

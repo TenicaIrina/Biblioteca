@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using DataAccesLayer;
+﻿using DataAccesLayer;
 using System.Data;
 
 namespace Domain
 {
     public class BookModel
     {
-        private BooksOp books = new BooksOp();
+        private readonly BooksOp books = new BooksOp();
        
         public DataTable ShowBooks()
         {

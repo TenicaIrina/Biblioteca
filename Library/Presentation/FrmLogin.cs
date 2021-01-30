@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Common.cache;
 using Domain;
@@ -27,7 +21,7 @@ namespace Presentation
                 {
                     UserModel user = new UserModel();
                     var validition = user.LoginUser(txtUser.Text, txtpass.Text);//declaram o variabila cacreia ii asignam valoarea din metota din Domain
-                    if (validition == true)// daca userul exista
+                    if (validition)// daca userul exista
                     {
                         if (UserLoginCache.Position == RoleUsers.Administrator)
                         {
@@ -55,6 +49,8 @@ namespace Presentation
             }
             else msgError("Please enter your username");
         }
+
+
         private void msgError(string msg)
         {
             lblError.Text = "    " + msg;

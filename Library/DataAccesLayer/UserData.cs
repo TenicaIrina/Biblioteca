@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
 using Common.cache;
 
@@ -11,7 +6,7 @@ namespace DataAccesLayer
 {
     public class UserData
     {
-        private ConnectionSql connection = new ConnectionSql();
+        private readonly ConnectionSql connection = new ConnectionSql();
         public bool Login(string user, string pass)
         {
          
@@ -31,8 +26,6 @@ namespace DataAccesLayer
                         while (reader.Read())
                         {
                             UserLoginCache.IdUser = reader.GetInt32(0);
-                            //UserLoginCache.UserName = reader.GetString(1);
-                            //UserLoginCache.Password = reader.GetString(2);
                             UserLoginCache.FullName = reader.GetString(3);
                             UserLoginCache.Position = reader.GetString(4);
                             UserLoginCache.Email = reader.GetString(5);
@@ -45,19 +38,7 @@ namespace DataAccesLayer
                 }
         }
 
-        public void RoleUser()
-        {
-            if(UserLoginCache.Position == RoleUsers.Administrator)
-            {
-            //doar administratorii pot modifica baza de date
-            }
-            else if (UserLoginCache.Position == RoleUsers.Utilizator)
-            {
-
-            }
-
-        }
-
+      
 
     }
 }

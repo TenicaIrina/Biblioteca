@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Common.cache;
@@ -103,39 +96,9 @@ namespace Presentation
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void ManageProjectsUser_Click(object sender, EventArgs e)
-        {
-        //    ProjectsDataDisplayUser pr = new ProjectsDataDisplayUser();
-        //    pr.Show();
-        }
 
-        private void ManageTasks_UserClick(object sender, EventArgs e)
-        {
-          //  OpenFormInPanelUser(new TaskForm());
-        }
 
-        private void TeamManage_Click(object sender, EventArgs e)
-        {
-          //  OpenFormInPanelUser(new TeamManagement());
-        }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-        //    this.Close();
-        //    Form1 fm = new Form1();
-        //    fm.Show();
-        }
-
-        private void ReportsByHours(object sender, EventArgs e)
-        {
-           // OpenFormInPanelUser(new ReportsProject());
-        }
-
-        private void TimeTrakingReports(object sender, EventArgs e)
-        {
-           //FormTest formTest = new FormTest();
-           // formTest.Show();
-        }
 
         private void MenuClick(object sender, EventArgs e)
         {
@@ -147,12 +110,6 @@ namespace Presentation
                 MenuVertical.Width = 256;
         }
 
-        //private void btnLogoutUser_Click(object sender, EventArgs e)
-        //{
-        //    this.Hide();
-        //    FrmLogin fm = new FrmLogin();
-        //    fm.Show();
-        //}
 
         private void MainForm_Load(object sender, EventArgs e)
         {

@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.PanelTitlu = new System.Windows.Forms.Panel();
+            this.pictureRestabilre = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureMarire = new System.Windows.Forms.PictureBox();
+            this.pictureMinimizare = new System.Windows.Forms.PictureBox();
+            this.pictureIesire = new System.Windows.Forms.PictureBox();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.lblUserRole = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
@@ -38,23 +43,18 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.pictureRestabilre = new System.Windows.Forms.PictureBox();
-            this.pictureMarire = new System.Windows.Forms.PictureBox();
-            this.pictureMinimizare = new System.Windows.Forms.PictureBox();
-            this.pictureIesire = new System.Windows.Forms.PictureBox();
-            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTitlu.SuspendLayout();
-            this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRestabilre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMarire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimizare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIesire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
+            this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +73,19 @@
             this.PanelTitlu.TabIndex = 9;
             this.PanelTitlu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown_PanelTop);
             // 
+            // pictureRestabilre
+            // 
+            this.pictureRestabilre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureRestabilre.Image = global::Presentation.Properties.Resources.icon_maximaze;
+            this.pictureRestabilre.Location = new System.Drawing.Point(1016, 0);
+            this.pictureRestabilre.Name = "pictureRestabilre";
+            this.pictureRestabilre.Size = new System.Drawing.Size(20, 20);
+            this.pictureRestabilre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureRestabilre.TabIndex = 4;
+            this.pictureRestabilre.TabStop = false;
+            this.pictureRestabilre.Visible = false;
+            this.pictureRestabilre.Click += new System.EventHandler(this.Restabilire_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -82,6 +95,54 @@
             this.label1.Size = new System.Drawing.Size(137, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Admin Dashboard";
+            // 
+            // pictureMarire
+            // 
+            this.pictureMarire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureMarire.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureMarire.Image = global::Presentation.Properties.Resources.icon_maximaze;
+            this.pictureMarire.Location = new System.Drawing.Point(1016, 0);
+            this.pictureMarire.Name = "pictureMarire";
+            this.pictureMarire.Size = new System.Drawing.Size(20, 20);
+            this.pictureMarire.TabIndex = 3;
+            this.pictureMarire.TabStop = false;
+            this.pictureMarire.Click += new System.EventHandler(this.Marire_Click);
+            // 
+            // pictureMinimizare
+            // 
+            this.pictureMinimizare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureMinimizare.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureMinimizare.Image = global::Presentation.Properties.Resources.icon_minimizare;
+            this.pictureMinimizare.Location = new System.Drawing.Point(990, 0);
+            this.pictureMinimizare.Name = "pictureMinimizare";
+            this.pictureMinimizare.Size = new System.Drawing.Size(20, 20);
+            this.pictureMinimizare.TabIndex = 2;
+            this.pictureMinimizare.TabStop = false;
+            this.pictureMinimizare.Click += new System.EventHandler(this.Minimizare_Click);
+            // 
+            // pictureIesire
+            // 
+            this.pictureIesire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureIesire.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureIesire.Image = global::Presentation.Properties.Resources.iconexit1;
+            this.pictureIesire.Location = new System.Drawing.Point(1042, 0);
+            this.pictureIesire.Name = "pictureIesire";
+            this.pictureIesire.Size = new System.Drawing.Size(20, 20);
+            this.pictureIesire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureIesire.TabIndex = 1;
+            this.pictureIesire.TabStop = false;
+            this.pictureIesire.Click += new System.EventHandler(this.Iesire_Click);
+            // 
+            // btnSlide
+            // 
+            this.btnSlide.Image = global::Presentation.Properties.Resources.Mobile_Menu_Icon;
+            this.btnSlide.Location = new System.Drawing.Point(6, 9);
+            this.btnSlide.Name = "btnSlide";
+            this.btnSlide.Size = new System.Drawing.Size(35, 35);
+            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSlide.TabIndex = 0;
+            this.btnSlide.TabStop = false;
+            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
             // 
             // panelContent
             // 
@@ -173,17 +234,35 @@
             // 
             this.MenuVertical.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.MenuVertical.BackColor = System.Drawing.Color.SkyBlue;
+            this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.btn8);
             this.MenuVertical.Controls.Add(this.button6);
             this.MenuVertical.Controls.Add(this.button4);
             this.MenuVertical.Controls.Add(this.button1);
-            this.MenuVertical.Controls.Add(this.button2);
             this.MenuVertical.Controls.Add(this.button5);
             this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Location = new System.Drawing.Point(-6, 66);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(254, 623);
             this.MenuVertical.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Lavender;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button2.Image = global::Presentation.Properties.Resources.innovation__1_1;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(7, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(244, 94);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Insert Books";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Project_Click);
             // 
             // btn8
             // 
@@ -203,85 +282,6 @@
             this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn_LogoutClick);
-            // 
-            // pictureRestabilre
-            // 
-            this.pictureRestabilre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureRestabilre.Image = global::Presentation.Properties.Resources.icon_maximaze;
-            this.pictureRestabilre.Location = new System.Drawing.Point(1016, 0);
-            this.pictureRestabilre.Name = "pictureRestabilre";
-            this.pictureRestabilre.Size = new System.Drawing.Size(20, 20);
-            this.pictureRestabilre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureRestabilre.TabIndex = 4;
-            this.pictureRestabilre.TabStop = false;
-            this.pictureRestabilre.Visible = false;
-            this.pictureRestabilre.Click += new System.EventHandler(this.Restabilire_Click);
-            // 
-            // pictureMarire
-            // 
-            this.pictureMarire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureMarire.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureMarire.Image = global::Presentation.Properties.Resources.icon_maximaze;
-            this.pictureMarire.Location = new System.Drawing.Point(1016, 0);
-            this.pictureMarire.Name = "pictureMarire";
-            this.pictureMarire.Size = new System.Drawing.Size(20, 20);
-            this.pictureMarire.TabIndex = 3;
-            this.pictureMarire.TabStop = false;
-            this.pictureMarire.Click += new System.EventHandler(this.Marire_Click);
-            // 
-            // pictureMinimizare
-            // 
-            this.pictureMinimizare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureMinimizare.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureMinimizare.Image = global::Presentation.Properties.Resources.icon_minimizare;
-            this.pictureMinimizare.Location = new System.Drawing.Point(990, 0);
-            this.pictureMinimizare.Name = "pictureMinimizare";
-            this.pictureMinimizare.Size = new System.Drawing.Size(20, 20);
-            this.pictureMinimizare.TabIndex = 2;
-            this.pictureMinimizare.TabStop = false;
-            this.pictureMinimizare.Click += new System.EventHandler(this.Minimizare_Click);
-            // 
-            // pictureIesire
-            // 
-            this.pictureIesire.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureIesire.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureIesire.Image = global::Presentation.Properties.Resources.iconexit1;
-            this.pictureIesire.Location = new System.Drawing.Point(1042, 0);
-            this.pictureIesire.Name = "pictureIesire";
-            this.pictureIesire.Size = new System.Drawing.Size(20, 20);
-            this.pictureIesire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureIesire.TabIndex = 1;
-            this.pictureIesire.TabStop = false;
-            this.pictureIesire.Click += new System.EventHandler(this.Iesire_Click);
-            // 
-            // btnSlide
-            // 
-            this.btnSlide.Image = global::Presentation.Properties.Resources.Mobile_Menu_Icon;
-            this.btnSlide.Location = new System.Drawing.Point(6, 9);
-            this.btnSlide.Name = "btnSlide";
-            this.btnSlide.Size = new System.Drawing.Size(35, 35);
-            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSlide.TabIndex = 0;
-            this.btnSlide.TabStop = false;
-            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Lavender;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button2.Image = global::Presentation.Properties.Resources.innovation__1_1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(7, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 94);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Insert Books";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Project_Click);
             // 
             // button5
             // 
@@ -349,12 +349,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.PanelTitlu.ResumeLayout(false);
             this.PanelTitlu.PerformLayout();
-            this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureRestabilre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMarire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimizare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIesire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
+            this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

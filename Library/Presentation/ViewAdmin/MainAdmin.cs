@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Common.cache;
@@ -29,15 +22,11 @@ namespace Presentation
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-           // Form1 obj = new Form1();
-           // obj.Show();
         }
 
         private void Project_Click(object sender, EventArgs e)
         {
             OpenFormInPanel(new ViewBooks());
-             //ViewBooks book = new ViewBooks();
-             //book.Show();
 
         }
 
@@ -114,25 +103,16 @@ namespace Presentation
             fh.Show();
         }
 
-        private void ViewReports(object sender, EventArgs e)
-        {
-          //  OpenFormInPanel(new ReportForm());
-        }
+    
 
 
         private void btnReports(object sender, EventArgs e)
         {
              OpenFormInPanel(new Category());
-            //Category cat = new Category();
-            //cat.Show();
         }
 
      
 
-        private void panelContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -152,23 +132,17 @@ namespace Presentation
         private void btn_ViewBooks_Click(object sender, EventArgs e)
         {
             OpenFormInPanel(new BooksDataDisplayUser());
-            //BooksDataDisplayUser book = new BooksDataDisplayUser();
-            //book.Show();
         }
 
         private void BooksByDates_Click(object sender, EventArgs e)
         {
             OpenFormInPanel(new BooksByDates());
-            //BooksByDates data = new BooksByDates();
-            //data.Show();
         }
 
 
         private void ViewPublishingHouse(object sender, EventArgs e)
         {
             OpenFormInPanel(new ReportsByPublishingHouse());
-            //ReportsByPublishingHouse pu = new ReportsByPublishingHouse();
-            //pu.Show();
         }
     }
 }

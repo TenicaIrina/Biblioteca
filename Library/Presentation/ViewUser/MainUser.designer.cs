@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.btnLogoutUser = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnUserBook = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.lblmailUser = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblNameUser = new System.Windows.Forms.Label();
@@ -57,46 +55,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimizare)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User Dashboard";
-            // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.SkyBlue;
             this.MenuVertical.Controls.Add(this.button7);
             this.MenuVertical.Controls.Add(this.btnLogoutUser);
             this.MenuVertical.Controls.Add(this.button5);
-            this.MenuVertical.Controls.Add(this.button4);
             this.MenuVertical.Controls.Add(this.button3);
             this.MenuVertical.Controls.Add(this.btnUserBook);
             this.MenuVertical.Location = new System.Drawing.Point(0, 86);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(250, 620);
+            this.MenuVertical.Size = new System.Drawing.Size(259, 606);
             this.MenuVertical.TabIndex = 3;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(6, 528);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(244, 89);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Logout";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnLogoutUser
             // 
@@ -126,23 +96,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Log out";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 273);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(256, 82);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Domain reports";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.ViewReports_Click);
+           
             // 
             // button3
             // 
@@ -175,6 +129,21 @@
             this.btnUserBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUserBook.UseVisualStyleBackColor = true;
             this.btnUserBook.Click += new System.EventHandler(this.ManageBooksUser_Click);
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(3, 361);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(253, 69);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Logout";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // lblmailUser
             // 
@@ -219,10 +188,9 @@
             this.PanelTitlu.Controls.Add(this.pictureRestabilre);
             this.PanelTitlu.Controls.Add(this.pictureMarire);
             this.PanelTitlu.Controls.Add(this.pictureMinimizare);
-            this.PanelTitlu.Controls.Add(this.label1);
-            this.PanelTitlu.Location = new System.Drawing.Point(256, 12);
+            this.PanelTitlu.Location = new System.Drawing.Point(256, 0);
             this.PanelTitlu.Name = "PanelTitlu";
-            this.PanelTitlu.Size = new System.Drawing.Size(1063, 75);
+            this.PanelTitlu.Size = new System.Drawing.Size(1063, 87);
             this.PanelTitlu.TabIndex = 4;
             this.PanelTitlu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BaraTiltlu_MouseDown);
             // 
@@ -292,7 +260,7 @@
             this.panelUser.BackColor = System.Drawing.Color.Transparent;
             this.panelUser.Location = new System.Drawing.Point(256, 86);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(1063, 620);
+            this.panelUser.Size = new System.Drawing.Size(1063, 606);
             this.panelUser.TabIndex = 5;
             // 
             // MainUser
@@ -327,14 +295,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.Panel PanelTitlu;
         private System.Windows.Forms.PictureBox pictureMinimizare;
         private System.Windows.Forms.PictureBox pictureRestabilre;
         private System.Windows.Forms.PictureBox pictureMarire;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnUserBook;
         private System.Windows.Forms.Button button5;
