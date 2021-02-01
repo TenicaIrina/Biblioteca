@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.PanelTitlu = new System.Windows.Forms.Panel();
-            this.pictureRestabilre = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureMarire = new System.Windows.Forms.PictureBox();
-            this.pictureMinimizare = new System.Windows.Forms.PictureBox();
-            this.pictureIesire = new System.Windows.Forms.PictureBox();
-            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.lblUserRole = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.pictureRestabilre = new System.Windows.Forms.PictureBox();
+            this.pictureMarire = new System.Windows.Forms.PictureBox();
+            this.pictureMinimizare = new System.Windows.Forms.PictureBox();
+            this.pictureIesire = new System.Windows.Forms.PictureBox();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTitlu.SuspendLayout();
+            this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRestabilre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMarire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimizare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIesire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
-            this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +73,102 @@
             this.PanelTitlu.TabIndex = 9;
             this.PanelTitlu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown_PanelTop);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Admin Dashboard";
+            // 
+            // panelContent
+            // 
+            this.panelContent.BackColor = System.Drawing.Color.Lavender;
+            this.panelContent.Location = new System.Drawing.Point(254, 66);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1065, 623);
+            this.panelContent.TabIndex = 10;
+            // 
+            // lblUserRole
+            // 
+            this.lblUserRole.AutoSize = true;
+            this.lblUserRole.Location = new System.Drawing.Point(86, 14);
+            this.lblUserRole.Name = "lblUserRole";
+            this.lblUserRole.Size = new System.Drawing.Size(51, 13);
+            this.lblUserRole.TabIndex = 0;
+            this.lblUserRole.Text = "UserRole";
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Location = new System.Drawing.Point(86, 31);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(35, 13);
+            this.lblFullName.TabIndex = 0;
+            this.lblFullName.Text = "Name";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(86, 47);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 0;
+            this.lblEmail.Text = "Email";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SkyBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 792);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(250, 85);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Log out";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Lavender;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button6.Image = global::Presentation.Properties.Resources.seo_report;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(3, 403);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(244, 94);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Domains reports";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.btnReports);
+            // 
+            // MenuVertical
+            // 
+            this.MenuVertical.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MenuVertical.BackColor = System.Drawing.Color.SkyBlue;
+            this.MenuVertical.Controls.Add(this.button2);
+            this.MenuVertical.Controls.Add(this.btn8);
+            this.MenuVertical.Controls.Add(this.button6);
+            this.MenuVertical.Controls.Add(this.button4);
+            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.button5);
+            this.MenuVertical.Controls.Add(this.button3);
+            this.MenuVertical.Location = new System.Drawing.Point(-6, 66);
+            this.MenuVertical.Name = "MenuVertical";
+            this.MenuVertical.Size = new System.Drawing.Size(254, 623);
+            this.MenuVertical.TabIndex = 8;
+            // 
             // pictureRestabilre
             // 
             this.pictureRestabilre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -85,16 +181,6 @@
             this.pictureRestabilre.TabStop = false;
             this.pictureRestabilre.Visible = false;
             this.pictureRestabilre.Click += new System.EventHandler(this.Restabilire_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 20);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Admin Dashboard";
             // 
             // pictureMarire
             // 
@@ -144,108 +230,6 @@
             this.btnSlide.TabStop = false;
             this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
             // 
-            // panelContent
-            // 
-            this.panelContent.BackColor = System.Drawing.Color.Lavender;
-            this.panelContent.Location = new System.Drawing.Point(254, 66);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1065, 623);
-            this.panelContent.TabIndex = 10;
-            // 
-            // lblUserRole
-            // 
-            this.lblUserRole.AutoSize = true;
-            this.lblUserRole.Location = new System.Drawing.Point(86, 14);
-            this.lblUserRole.Name = "lblUserRole";
-            this.lblUserRole.Size = new System.Drawing.Size(51, 13);
-            this.lblUserRole.TabIndex = 0;
-            this.lblUserRole.Text = "UserRole";
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Location = new System.Drawing.Point(86, 31);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(35, 13);
-            this.lblFullName.TabIndex = 0;
-            this.lblFullName.Text = "Name";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(86, 47);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(32, 13);
-            this.lblEmail.TabIndex = 0;
-            this.lblEmail.Text = "Email";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Lavender;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(7, 303);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 94);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Publish Reports";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.ViewPublishingHouse);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.SkyBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 792);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 85);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Log out";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Lavender;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 403);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(244, 94);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Domains reports";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.btnReports);
-            // 
-            // MenuVertical
-            // 
-            this.MenuVertical.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.MenuVertical.BackColor = System.Drawing.Color.SkyBlue;
-            this.MenuVertical.Controls.Add(this.button2);
-            this.MenuVertical.Controls.Add(this.btn8);
-            this.MenuVertical.Controls.Add(this.button6);
-            this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.button1);
-            this.MenuVertical.Controls.Add(this.button5);
-            this.MenuVertical.Controls.Add(this.button3);
-            this.MenuVertical.Location = new System.Drawing.Point(-6, 66);
-            this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(254, 623);
-            this.MenuVertical.TabIndex = 8;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Lavender;
@@ -282,6 +266,24 @@
             this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn_LogoutClick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Lavender;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button1.Image = global::Presentation.Properties.Resources.clipboard;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(7, 303);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 94);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Publish Reports";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.ViewPublishingHouse);
             // 
             // button5
             // 
@@ -349,12 +351,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.PanelTitlu.ResumeLayout(false);
             this.PanelTitlu.PerformLayout();
+            this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureRestabilre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMarire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMinimizare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIesire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
-            this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,5 +1,4 @@
 ﻿
-
 namespace Common.cache
 {
     public struct RoleUsers

@@ -73,6 +73,16 @@ namespace Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clipboard {
+            get {
+                object obj = ResourceManager.GetObject("clipboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_back {
             get {
                 object obj = ResourceManager.GetObject("icon-back", resourceCulture);
@@ -186,6 +196,16 @@ namespace Presentation.Properties {
         internal static System.Drawing.Bitmap project_management {
             get {
                 object obj = ResourceManager.GetObject("project-management", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seo_report {
+            get {
+                object obj = ResourceManager.GetObject("seo-report", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

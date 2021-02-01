@@ -118,43 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="login1801" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login1801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-user-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-user-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mobile-Menu-Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mobile-Menu-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login180" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconexit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconexit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="innovation (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\innovation (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon maximaze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon maximaze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="period1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\period1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Admin-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin-icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="project-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\project-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mobile-Menu-Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mobile-Menu-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon minimizare" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon minimizare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconexit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconexit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconexit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconexit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="innovation (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\innovation (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-user-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="project-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\project-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login1801" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login1801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon maximaze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon maximaze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon minimizare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon minimizare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seo-report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seo-report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

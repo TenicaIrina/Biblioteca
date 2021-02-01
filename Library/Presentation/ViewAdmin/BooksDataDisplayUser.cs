@@ -24,6 +24,8 @@ namespace Presentation.ViewAdmin
         {
             ShowBooksfromModel();
         }
+
+        // metoda ce returneaza cartile in interfata
         private void ShowBooksfromModel()
         {
             CaracteristicsModel objectB = new CaracteristicsModel();

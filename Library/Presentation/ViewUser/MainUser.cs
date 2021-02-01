@@ -135,5 +135,18 @@ namespace Presentation
         {
             OpenFormInPanelUser(new ReportsByPublishingHouse());
         }
+
+
+        private void ViewBooks_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanelUser(new BooksDataDisplayUser());
+        }
+
+        private void btnUser_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin fm = new FrmLogin();
+            fm.Show();
+        }
     }
 }
